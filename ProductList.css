@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  color: white;
+}
+img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  margin-top: 5px;
+}
+.card {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  padding: 5px 10px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border: 0.2px solid gray;
+  cursor: pointer;
+  transition: 0.3s all ease;
+  -webkit-transition: 0.3s all ease;
+  -moz-transition: 0.3s all ease;
+  -ms-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+}
+.card.active {
+  background: linear-gradient(280deg, #ff4d4d, #4d79ff, #9b59b6, #ffffff);
+  color: black;
+  text-align: right;
+  background-size: 300% 300%;
+  animation: bg-smooth 8s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
+  -webkit-animation: bg-smooth 8s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
+}
+
+@keyframes bg-smooth {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+#Car_List {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px ;
+}
+h2 {
+  background-color: red;
+  padding: 10px;
+  margin-bottom: 20px;
+}
