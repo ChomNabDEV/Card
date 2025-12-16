@@ -4,19 +4,19 @@ const data = document.querySelector("#Car_List");
           Brand: "BMW",
           Release_Date: "12-July_1998",
           Price: "2,500,000$",
-          Img: "../../image.png",
+          Img: "image.png",
         },
         {
           Brand: "Ferrari",
           Release_Date: "01-May_1978",
           Price: "10,900,000$",
-          Img: "../../image copy.png",
+          Img: "image copy.png",
         },
         {
           Brand: "Ros-Roy",
           Release_Date: "12-October_1981",
           Price: "22,00,000$",
-          Img: "../../image copy 2.png",
+          Img: "image copy 2.png",
         },
       ];
       Car_Detail.forEach((car) => {
